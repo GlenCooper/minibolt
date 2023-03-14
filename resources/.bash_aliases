@@ -253,3 +253,24 @@ alias rtlogs='sudo journalctl -f -u rtl'
 alias litdlogs='sudo journalctl -f -u litd'
 alias clnlogs='sudo journalctl -f -u cln'
 alias electrslogs='sudo journalctl -f -u electrs'
+
+#################
+#  LND TESTNET  #
+#################
+
+alias unlock='lncli --network testnet unlock'
+alias newaddress='lncli --network testnet newaddress p2tr'
+alias txns='lncli --network testnet listchaintxns'
+alias listpayments='lncli --network testnet listpayments'
+alias listinvoices='lncli --network testnet listinvoices'
+alias getinfo='lncli --network testnet getinfo'
+alias walletbalance='lncli --network testnet walletbalance'
+alias peers='lncli --network testnet listpeers'
+alias channels='lncli --network testnet listchannels'
+alias channelbalance='lncli --network testnet channelbalance'
+alias pendingchannels='lncli --network testnet pendingchannels'
+alias openchannel='lncli --network testnet openchannel'
+alias connect='lncli --network testnet connect'
+alias payinvoice='lncli --network testnet payinvoice'
+alias addinvoice='lncli --network testnet addinvoice'
+alias addAMPinvoice30d='lncli --network testnet addinvoice --amp'
